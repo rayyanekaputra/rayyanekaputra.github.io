@@ -1,14 +1,18 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,700,900,300italic|Montserrat:800,800italic");
+@import url("https://fonts.googleapis.com/css?family=Roboto:900italic,300italic,700,900,300|Montserrat:800,800italic");
 * {
   box-sizing: border-box;
+}
+.animate-enter {
+  animation: animate-enter-frames 0.2s ease-in-out 0s 1 normal forwards;
+  display: block;
 }
 .desktop-1 {
   align-items: flex-start;
   background-color: white;
   display: flex;
   flex-direction: column;
-  height: 1410px;
+  height: 2504px;
   width: 1440px;
 }
 .desktop-1 .about {
@@ -28,6 +32,45 @@
   height: 44px;
   min-width: 1208px;
 }
+.desktop-1 .auto-flex1 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  min-height: 646px;
+  width: 1208px;
+}
+.desktop-1 .auto-flex2 {
+  align-items: flex-end;
+  display: flex;
+  margin-top: 227px;
+  min-width: 150px;
+}
+.desktop-1 .biography {
+  height: 64px;
+  left: 118px;
+  position: absolute;
+  top: 90px;
+  width: 304px;
+}
+.desktop-1 .biography-1 {
+  left: 115px;
+  letter-spacing: 0px;
+  position: absolute;
+  top: 140px;
+}
+.desktop-1 .buttonread {
+  background-color: white;
+  border-radius: 90px;
+  height: 67px;
+  margin-top: 35px;
+  pointer-events: auto;
+  position: relative;
+  transition: all 0.2s ease-in;
+  width: 537px;
+}
+.desktop-1 .buttonread:hover {
+  transform: translate(0, -5px);
+}
 .desktop-1 .contacts {
   left: 88px;
   letter-spacing: 0px;
@@ -39,10 +82,6 @@
 .desktop-1 .contacts:hover {
   transform: translate(0, -5px);
 }
-.desktop-1 .curriculum-vitae {
-  letter-spacing: 0px;
-  min-height: 75px;
-}
 .desktop-1 .frame-1 {
   height: 21px;
   margin-bottom: 5px;
@@ -50,24 +89,29 @@
   pointer-events: auto;
   position: relative;
   transition: all 0.2s ease;
-  width: 370px;
+  width: 368px;
 }
-.desktop-1 .group-1 {
+.desktop-1 .frame-4 {
   background-color: white;
-  border-radius: 90px;
-  height: 67px;
-  margin-top: 34px;
-  pointer-events: auto;
-  position: relative;
-  transition: all 0.2s ease-in;
-  width: 537px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+  height: 400px;
+  left: 115px;
+  position: absolute;
+  top: 241px;
+  width: 337px;
 }
-.desktop-1 .group-1:hover {
-  transform: translate(0, -5px);
+.desktop-1 .motto {
+  align-self: center;
+  letter-spacing: 0px;
+  margin-left: 3px;
+  min-height: 21px;
+  min-width: 55px;
+  text-align: center;
 }
 .desktop-1 .overlap-group {
   align-items: flex-start;
-  background-image: url(https://anima-uploads.s3.amazonaws.com/projects/6032ea0d56f3fc2db4ba7a7a/releases/6032eb47a8300a54412b410e/img/untitled-1-1@1x.svg);
+  background-image: url(https://anima-uploads.s3.amazonaws.com/projects/603d328aec73cf22dead5cfc/releases/603d32d9e8d791cf173c5dfe/img/bg-hero@1x.png);
   background-position: 50% 50%;
   background-size: cover;
   display: flex;
@@ -77,19 +121,18 @@
   width: 1440px;
 }
 .desktop-1 .overlap-group1 {
-  align-items: flex-start;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  min-height: 386px;
-  padding: 99px 115px;
+  height: 1190px;
+  position: relative;
   width: 1440px;
 }
 .desktop-1 .overlap-group2 {
-  height: 56px;
-  margin-top: 26px;
-  position: relative;
-  width: 539px;
+  align-items: flex-start;
+  background-color: var(--athens-gray);
+  display: flex;
+  flex-direction: column;
+  min-height: 290px;
+  padding: 94px 399.8px;
+  width: 1440px;
 }
 .desktop-1 .place {
   left: 0px;
@@ -126,11 +169,93 @@
   top: 23px;
   width: 167px;
 }
-.desktop-1 .text {
-  left: 477px;
-  letter-spacing: 0px;
+.desktop-1 .rectangle-2 {
+  height: 430px;
+  left: 0px;
+  object-fit: cover;
   position: absolute;
-  top: 14px;
+  top: 0px;
+  width: 1440px;
+}
+.desktop-1 .rectangle-3 {
+  height: 430px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 1440px;
+}
+.desktop-1 .rectangle-5 {
+  background-color: white;
+  height: 760px;
+  left: 0px;
+  position: absolute;
+  top: 430px;
+  width: 1440px;
+}
+.desktop-1 .rectangle-6 {
+  height: 367px;
+  left: 111px;
+  object-fit: cover;
+  pointer-events: auto;
+  position: absolute;
+  top: 733px;
+  transition: all 0.2s ease-in-out;
+  width: 368px;
+}
+.desktop-1 .rectangle-6-1 {
+  height: 187px;
+  left: 75px;
+  object-fit: cover;
+  position: absolute;
+  top: 39px;
+  width: 187px;
+}
+.desktop-1 .rectangle-6:hover {
+  transform: translate(0, -5px);
+}
+.desktop-1 .rectangle-7 {
+  height: 167px;
+  left: 512px;
+  object-fit: cover;
+  pointer-events: auto;
+  position: absolute;
+  top: 933px;
+  transition: all 0.2s ease-in-out;
+  width: 340px;
+}
+.desktop-1 .rectangle-7:hover {
+  transform: translate(0, -5px);
+}
+.desktop-1 .rectangle-8 {
+  height: 167px;
+  left: 512px;
+  object-fit: cover;
+  pointer-events: auto;
+  position: absolute;
+  top: 733px;
+  transition: all 0.2s ease-in-out;
+  width: 340px;
+}
+.desktop-1 .rectangle-8:hover {
+  transform: translate(0, -5px);
+}
+.desktop-1 .rectangle-9 {
+  height: 292px;
+  left: 885px;
+  object-fit: cover;
+  pointer-events: auto;
+  position: absolute;
+  top: 733px;
+  transition: all 0.2s ease-in-out;
+  width: 444px;
+}
+.desktop-1 .rectangle-9:hover {
+  transform: translate(0, -5px);
+}
+.desktop-1 .set-your-heart-ablaze {
+  height: 51px;
+  margin-top: 12px;
+  width: 638px;
 }
 .desktop-1 .text-1 {
   letter-spacing: 0px;
@@ -138,21 +263,50 @@
   min-height: 150px;
 }
 .desktop-1 .text-2 {
-  left: 0px;
-  letter-spacing: 0px;
-  position: absolute;
-  top: 0px;
-}
-.desktop-1 .text-3 {
   letter-spacing: 0px;
   margin-top: 11px;
-  min-height: 99px;
+  min-height: 47px;
+}
+.desktop-1 .text-3 {
+  left: 930px;
+  letter-spacing: 0px;
+  position: absolute;
+  text-align: right;
+  top: 534px;
+}
+.desktop-1 .text-4 {
+  left: 885px;
+  letter-spacing: 0px;
+  position: absolute;
+  top: 1057px;
+}
+.desktop-1 .text-5 {
+  left: 75px;
+  letter-spacing: 0px;
+  position: absolute;
+  text-align: center;
+  top: 255px;
+  width: 189px;
 }
 .desktop-1 .vector {
   height: 14px;
   margin-bottom: 6px;
-  margin-left: 402px;
+  margin-left: 404px;
   width: 14px;
+}
+.desktop-1 .vector-1 {
+  height: 37px;
+  width: 37px;
+}
+.desktop-1 .vector-2 {
+  height: 37px;
+  margin-left: 11px;
+  width: 37px;
+}
+.desktop-1 .vector-3 {
+  height: 38px;
+  margin-left: 11px;
+  width: 54px;
 }
 .montserrat-extra-bold-white-36px {
   color: white;
@@ -160,6 +314,7 @@
   font-size: 36px;
   font-style: italic;
   font-weight: 800;
+  line-height: 1.5em
 }
 .roboto-black-shark-18px {
   color: var(--shark);
@@ -167,7 +322,15 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 900;
-
+  line-height: 1.5em
+}
+.roboto-black-shark-18px-2 {
+  color: var(--shark);
+  font-family: "Roboto", Helvetica, Arial, serif;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 1.5em
 }
 .roboto-black-shark-64px {
   color: var(--shark);
@@ -175,6 +338,15 @@
   font-size: 64px;
   font-style: normal;
   font-weight: 900;
+  line-height: 1.2em
+}
+.roboto-black-white-64px {
+  color: white;
+  font-family: "Roboto", Helvetica, Arial, serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1.5em
 }
 .roboto-bold-shark-18px {
   color: var(--shark);
@@ -182,16 +354,15 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
-
+  line-height: 1.5em
 }
-.roboto-light-black-36px {
-  color: black;
+.roboto-light-scarpa-flow-18px {
+  color: var(--scarpa-flow);
   font-family: "Roboto", Helvetica, Arial, serif;
-  font-size: 36px;
-  font-style: normal;
+  font-size: 18px;
+  font-style: italic;
   font-weight: 300;
-  line-height: 21px;
-
+  line-height: 1.5em
 }
 .roboto-light-shark-18px {
   color: var(--shark);
@@ -199,8 +370,20 @@
   font-size: 18px;
   font-style: italic;
   font-weight: 300;
-  line-height: 21px;
+  line-height: 1.5em;
 }
 :root {
+  --athens-gray: rgba(232, 231, 245, 1);
+  --scarpa-flow: rgba(86, 85, 89, 1);
   --shark: rgba(39, 39, 39, 1);
+}
+@keyframes animate-enter-frames {
+  from {
+  }
+  to {
+  }
+}
+a {
+  text-decoration: none;
+  display: contents;
 }
