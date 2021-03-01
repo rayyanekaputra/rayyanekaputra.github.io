@@ -1,0 +1,206 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,700,900,300italic|Montserrat:800,800italic");
+* {
+  box-sizing: border-box;
+}
+.desktop-1 {
+  align-items: flex-start;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 1410px;
+  width: 1440px;
+}
+.desktop-1 .about {
+  left: 199px;
+  letter-spacing: 0px;
+  pointer-events: auto;
+  position: absolute;
+  top: 0px;
+  transition: all 0.2s ease;
+}
+.desktop-1 .about:hover {
+  transform: translate(0, -5px);
+}
+.desktop-1 .auto-flex {
+  align-items: center;
+  display: flex;
+  height: 44px;
+  min-width: 1208px;
+}
+.desktop-1 .contacts {
+  left: 88px;
+  letter-spacing: 0px;
+  pointer-events: auto;
+  position: absolute;
+  top: 0px;
+  transition: all 0.2s ease;
+}
+.desktop-1 .contacts:hover {
+  transform: translate(0, -5px);
+}
+.desktop-1 .curriculum-vitae {
+  letter-spacing: 0px;
+  min-height: 75px;
+}
+.desktop-1 .frame-1 {
+  height: 21px;
+  margin-bottom: 5px;
+  margin-left: 273px;
+  pointer-events: auto;
+  position: relative;
+  transition: all 0.2s ease;
+  width: 370px;
+}
+.desktop-1 .group-1 {
+  background-color: white;
+  border-radius: 90px;
+  height: 67px;
+  margin-top: 34px;
+  pointer-events: auto;
+  position: relative;
+  transition: all 0.2s ease-in;
+  width: 537px;
+}
+.desktop-1 .group-1:hover {
+  transform: translate(0, -5px);
+}
+.desktop-1 .overlap-group {
+  align-items: flex-start;
+  background-image: url(https://anima-uploads.s3.amazonaws.com/projects/6032ea0d56f3fc2db4ba7a7a/releases/6032eb47a8300a54412b410e/img/untitled-1-1@1x.svg);
+  background-position: 50% 50%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 1024px;
+  padding: 45px 115px;
+  width: 1440px;
+}
+.desktop-1 .overlap-group1 {
+  align-items: flex-start;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 386px;
+  padding: 99px 115px;
+  width: 1440px;
+}
+.desktop-1 .overlap-group2 {
+  height: 56px;
+  margin-top: 26px;
+  position: relative;
+  width: 539px;
+}
+.desktop-1 .place {
+  left: 0px;
+  letter-spacing: 0px;
+  pointer-events: auto;
+  position: absolute;
+  top: 0px;
+  transition: all 0.2s ease;
+}
+.desktop-1 .place:hover {
+  transform: translate(0, -5px);
+}
+.desktop-1 .portofolio {
+  left: 286px;
+  letter-spacing: 0px;
+  pointer-events: auto;
+  position: absolute;
+  top: 0px;
+  transition: all 0.2s ease;
+}
+.desktop-1 .portofolio:hover {
+  transform: translate(0, -5px);
+}
+.desktop-1 .rayyan {
+  letter-spacing: 0px;
+  min-height: 44px;
+  min-width: 148px;
+}
+.desktop-1 .read {
+  left: 186px;
+  letter-spacing: 4.5px;
+  position: absolute;
+  text-align: center;
+  top: 23px;
+  width: 167px;
+}
+.desktop-1 .text {
+  left: 477px;
+  letter-spacing: 0px;
+  position: absolute;
+  top: 14px;
+}
+.desktop-1 .text-1 {
+  letter-spacing: 0px;
+  margin-top: 292px;
+  min-height: 150px;
+}
+.desktop-1 .text-2 {
+  left: 0px;
+  letter-spacing: 0px;
+  position: absolute;
+  top: 0px;
+}
+.desktop-1 .text-3 {
+  letter-spacing: 0px;
+  margin-top: 11px;
+  min-height: 99px;
+}
+.desktop-1 .vector {
+  height: 14px;
+  margin-bottom: 6px;
+  margin-left: 402px;
+  width: 14px;
+}
+.montserrat-extra-bold-white-36px {
+  color: white;
+  font-family: "Montserrat", Helvetica, Arial, serif;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 800;
+}
+.roboto-black-shark-18px {
+  color: var(--shark);
+  font-family: "Roboto", Helvetica, Arial, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 900;
+
+}
+.roboto-black-shark-64px {
+  color: var(--shark);
+  font-family: "Roboto", Helvetica, Arial, serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 900;
+}
+.roboto-bold-shark-18px {
+  color: var(--shark);
+  font-family: "Roboto", Helvetica, Arial, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+
+}
+.roboto-light-black-36px {
+  color: black;
+  font-family: "Roboto", Helvetica, Arial, serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 21px;
+
+}
+.roboto-light-shark-18px {
+  color: var(--shark);
+  font-family: "Roboto", Helvetica, Arial, serif;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 21px;
+}
+:root {
+  --shark: rgba(39, 39, 39, 1);
+}
